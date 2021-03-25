@@ -10,9 +10,12 @@
 
 - CLIon：
   [官网下载地址](https://www.jetbrains.com/clion/download/#section=mac)
-  送佛送到西，[注册码](http://idea.lanyus.com/)
+  
+  [注册码](http://idea.lanyus.com/)
+  
 - Mysql源码
   [官网下载地址](https://dev.mysql.com/downloads/mysql/) ,选择源码下载即可
+  
 - boost 下载
   从源码中可以看到，是需要1.65.0 下载对应的[boost](https://www.boost.org/users/history/)
 
@@ -80,7 +83,10 @@ cd /usr/local/var/mysql_data/mysql-8.0.4-rc
 // 1 设置Name, 直接使用默认的debug就行
 // 2 BuildType: 设置为Debug
 // 3 Cmake Option 设置为：
--DCMAKE_INSTALL_PREFIX=/usr/local/var/mysql_data/mysql-8.0.4-rc \ -DMYSQL_DATADIR=/usr/local/var/mysql_data/mysql-8.0.4-rc/data \ -DSYSCONFDIR=/usr/local/var/mysql_data/mysql-8.0.4-rc \ -DMYSQL_UNIX_ADDR=/usr/local/var/mysql_data/mysql-8.0.4-rc/data/mysql.sock \
+-DCMAKE_INSTALL_PREFIX=/usr/local/var/mysql_data/mysql-8.0.4-rc \
+-DMYSQL_DATADIR=/usr/local/var/mysql_data/mysql-8.0.4-rc/data \ 
+-DSYSCONFDIR=/usr/local/var/mysql_data/mysql-8.0.4-rc \ 
+-DMYSQL_UNIX_ADDR=/usr/local/var/mysql_data/mysql-8.0.4-rc/data/mysql.sock \
 -DWITH_DEBUG=1  \
 -DDOWNLOAD_BOOST=1 \
 -DWITH_BOOST=./boost/boost_1_65_0
